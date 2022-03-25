@@ -86,7 +86,7 @@ function getMove(
 };
 
 function makeMove() {
-  chess.move(getMove(3)[1]);
+  chess.move(getMove(parseInt(document.getElementById("diff").value) || 3)[1]);
 }
 
 function onDrop(source, target) {
